@@ -1,0 +1,48 @@
+.navbar {
+  height: 60px;
+  background-color: #111111;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 20px;
+}
+
+/* Logo */
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #EC4899;
+}
+
+/* Right section */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Username */
+
+.navbar-user {
+  font-size: 14px;
+}
+
+/* Logout Button */
+
+.navbar-logout-btn {
+  background-color: #EC4899;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.navbar-logout-btn:hover {
+  background-color: #DB2777;
+}
