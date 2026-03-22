@@ -1,28 +1,70 @@
 import "./Sidebar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <ul className="sidebar-menu">
-        <li className="sidebar-item">  </li>
-        
-          <Link to="/dashboard">Dashboard</Link>
-      
         <li className="sidebar-item">
-          <Link to="/rooms">Rooms</Link>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link sidebar-link--active" : "sidebar-link"
+            }
+            end
+          >
+            Dashboard
+          </NavLink>
         </li>
         <li className="sidebar-item">
-          <Link to="/bookings">Bookings</Link>
+          <NavLink
+            to="/rooms"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link sidebar-link--active" : "sidebar-link"
+            }
+          >
+            Rooms
+          </NavLink>
         </li>
         <li className="sidebar-item">
-          <Link to="/guest">Guests</Link>
+          <NavLink
+            to="/bookings"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link sidebar-link--active" : "sidebar-link"
+            }
+          >
+            Bookings
+          </NavLink>
         </li>
         <li className="sidebar-item">
-          <Link to="/housekeeping">Housekeeping</Link>
+          <NavLink
+            to="/guest"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link sidebar-link--active" : "sidebar-link"
+            }
+          >
+            Guests
+          </NavLink>
         </li>
         <li className="sidebar-item">
-          <Link to="/users">Users</Link>
+          <NavLink
+            to="/housekeeping"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link sidebar-link--active" : "sidebar-link"
+            }
+          >
+            Housekeeping
+          </NavLink>
+        </li>
+        <li className="sidebar-item">
+          <NavLink
+            to="/users"
+            className={({ isActive }) =>
+              isActive ? "sidebar-link sidebar-link--active" : "sidebar-link"
+            }
+          >
+            Users
+          </NavLink>
         </li>
       </ul>
     </div>
