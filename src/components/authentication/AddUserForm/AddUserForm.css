@@ -1,0 +1,40 @@
+.add-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.add-user-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-user-title {
+  text-align: center;
+}
+
+.add-user-input,
+.add-user-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.add-user-button {
+  background-color: #EC4899;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-user-button:hover {
+  background-color: #DB2777;
+}
